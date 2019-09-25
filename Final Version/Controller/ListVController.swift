@@ -38,8 +38,8 @@ class ListVController: UIViewController , UITableViewDelegate , UITableViewDataS
    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let header = view as? UITableViewHeaderFooterView {
-            header.textLabel!.font = UIFont.systemFont(ofSize: 15.0)
-            header.textLabel!.textColor = UIColor.orange
+            header.textLabel!.font = UIFont.systemFont(ofSize: 14.0)
+            header.textLabel!.textColor = UIColor.black
     }
     
         
@@ -187,7 +187,7 @@ class ListVController: UIViewController , UITableViewDelegate , UITableViewDataS
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
      
-     let cell = tableView.dequeueReusableCell(withIdentifier: "activedevicesCell", for: indexPath)
+     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
      
      
      // Configure the cell...
@@ -198,9 +198,7 @@ class ListVController: UIViewController , UITableViewDelegate , UITableViewDataS
      }
      }
 
- 
 
-    
     
     
 
